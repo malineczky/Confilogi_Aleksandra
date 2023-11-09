@@ -1,0 +1,149 @@
+br {
+    position: relative;
+}
+
+.nav {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 3px;
+
+    &__logo {
+        display: flex;
+    }
+
+    @include hd {
+        max-width: 2200px;
+    }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
+
+        &__list {
+            display: flex;
+
+            .red__button>a {
+                @include tablet {
+                    padding: 0 22px;
+                }
+            }
+
+            &--item {
+                margin-left: 20px;
+                padding: 10px 0;
+
+                @include tablet {
+                    width: 100px;
+                }
+
+                a:hover {
+                    color: $color-main-red;
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        .menu__list {
+            display: none;
+        }
+
+        .nav__box {
+            width: 100%;
+
+            .nav__logo {
+                width: 100%;
+            }
+        }
+
+        &--menu {
+            position: fixed;
+            z-index: 10000;
+            min-width: 100%;
+            height: 100%;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            opacity: 95%;
+            background-color: $color-dark-blue;
+
+            .nav__box {
+                width: 80%;
+                padding-top: 60px;
+            }
+        }
+    }
+
+    .hamburger {
+        display: block;
+        width: 35px;
+        cursor: pointer;
+        appearance: none;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .mobile__menu {
+        z-index: 10;
+        top: 130px;
+        background-color: $color-dark-blue;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+
+        a {
+            color: white;
+            display: block;
+
+            &:hover {
+                color: $color-main-red;
+            }
+        }
+    }
+
+    .mobile__list {
+        margin: 10%;
+
+        &--line {
+            height: 1px;
+            background-color: $color-grey;
+        }
+
+        &--item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .button {
+            border: 2px solid white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.socials__menu {
+    @include mobile {
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+}
+
+.logo-white {
+    path {
+        fill: white;
+    }
+}

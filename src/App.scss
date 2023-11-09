@@ -1,0 +1,22 @@
+@import './scss/generic/reset.scss';
+@import './scss/settings/general/colors.scss';
+@import './scss/settings/general/mini-container.scss';
+@import './scss/settings/general/graphic.scss';
+@import './scss/settings/general/fonts.scss';
+@import './scss/settings/general/base.scss';
+@import './scss/settings/general/buttons.scss';
+@import './scss/settings/general/popup.scss';
+@import './scss/settings/general/socials.scss';
+
+@import './scss/settings/general/RWD_mixins/mixin_mobile.scss';
+@import './scss/settings/general/RWD_mixins/mixin_4k.scss';
+@import './scss/settings/general/RWD_mixins/mixin_tablet.scss';
+
+
+@import './scss/settings/landing_page/home_nav.scss';
+@import './scss/settings/landing_page/home_opening.scss';
+@import './scss/settings/landing_page/home_faq.scss';
+@import './scss/settings/landing_page/home_form.scss';
+@import './scss/settings/landing_page/home_footer.scss';
+@import './scss/settings/landing_page/home_download_extension.scss';
+@import './scss/settings/landing_page/home_features_slide.scss';

@@ -1,0 +1,62 @@
+.btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 16px 0;
+    font-size: .812rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-family: $font-base;
+}
+
+.blue__button {
+    background-color: $color-main-blue;
+    color: white;
+
+    &:hover {
+        color: $color-main-blue;
+        background-color: transparent;
+        border: 2px solid $color-main-blue;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.grey__button {
+    background-color: hsl(233, 29%, 95%);
+    color: $color-grey;
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid hsl(230, 2%, 52%);
+    }
+}
+
+.red__button {
+    padding: 10px 20px;
+    background-color: $color-main-red;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: white;
+        border: 2px solid $color-main-red;
+        color: $color-main-red;
+    }
+
+    a {
+        color: white;
+        padding: 20px 40px;
+    }
+}
+
+.short {
+    width: 115px;
+}

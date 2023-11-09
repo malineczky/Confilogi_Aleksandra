@@ -1,0 +1,83 @@
+.opening {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    max-width: 2200px;
+    margin: 0 auto;
+
+    &__container {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__content {
+        padding-top: 90px;
+        margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+
+        @include mobile {
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+
+        @include tablet {
+            margin-right: 40px;
+            width: 40%;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-top: 20px;
+        margin-top: 10px;
+
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__graphic {
+        bottom: -42px;
+        right: 0;
+
+        @include mobile {
+            top: 50px;
+        }
+    }
+
+    &__image {
+        width: 620px;
+        height: auto;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        @include tablet {
+            width: 110%;
+            padding-top: 40px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1140px) {
+            width: 110%;
+            padding-top: 50px;
+        }
+    }
+
+}
+
+.opening__menu--open {
+    @include mobile {
+        margin-top: 155px;
+    }
+}

@@ -1,0 +1,135 @@
+.slides {
+    margin-bottom: 100px;
+    position: relative;
+    height: 500px;
+    max-width: 2200px;
+    margin: 0 auto;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    @include tablet {
+        height: 100%;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &--btn {
+            border: none;
+            border-bottom: 1px solid $color-grey;
+            background-color: transparent;
+            font-family: $font-base;
+            color: $color-grey;
+            font-size: 18px;
+            padding: 0 50px 20px 50px;
+
+            @include mobile {
+                padding-top: 20px;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 110px;
+
+                    @include mobile {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+
+            &:hover {
+
+                border-bottom: 4px solid $color-main-red;
+                color: $color-dark-blue;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__graphic {
+        border-top-right-radius: 150px;
+        border-bottom-right-radius: 150px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0px;
+        bottom: -55px;
+
+        @include mobile {
+            top: 330px;
+        }
+
+        @include hd {
+            top: 230px;
+        }
+
+        @include tablet {
+            width: 340px;
+            height: 60%;
+            top: 210px;
+            border-bottom-right-radius: 170px;
+        }
+    }
+}
+
+.tab {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &__info {
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+        @include mobile {
+            text-align: center;
+            width: 100%;
+            line-height: 33px;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__img {
+        width: 500px;
+        margin-right: 120px;
+        margin-top: 50px;
+
+        @include mobile {
+            width: 100%;
+            margin: 0;
+        }
+
+        @include tablet {
+            width: 40%;
+        }
+
+        &--img {
+            @include tablet {
+                width: 320px;
+                padding-top: 40px;
+            }
+
+            @include mobile {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

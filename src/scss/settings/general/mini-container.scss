@@ -1,0 +1,18 @@
+@import './RWD_mixins/mixin_mobile.scss';
+
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    margin: 0 auto 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @include mobile {
+        width: 85%;
+        line-height: 33px;
+    }
+}

@@ -1,0 +1,72 @@
+@import './RWD_mixins/mixin_mobile.scss';
+@import './RWD_mixins/mixin_4k.scss';
+@import './RWD_mixins/mixin_tablet.scss';
+
+* {
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    font-family: $font-base;
+    caret-color: transparent;
+
+    @include hd {
+        font-size: 1.5em;
+    }
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: $color-grey;
+    font-size: 18px;
+    line-height: 25px;
+
+    @include hd {
+        font-size: 1em;
+        line-height: 1.7em;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: $color-dark-blue;
+
+    @include hd {
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    @include tablet {
+        font-size: 2em;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: $color-dark-blue;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: $color-dark-blue;
+}
+
+input {
+    caret-color: rgb(107, 104, 104);
+}

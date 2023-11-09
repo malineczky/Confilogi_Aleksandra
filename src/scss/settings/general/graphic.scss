@@ -1,0 +1,46 @@
+@import './RWD_mixins/mixin_mobile.scss';
+@import './RWD_mixins/mixin_tablet.scss';
+@import './RWD_mixins/mixin_4k.scss';
+
+
+.graphic {
+    width: 40%;
+    height: 70%;
+    background-color: $color-main-blue;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    position: absolute;
+    z-index: -1;
+
+    @include mobile {
+        width: 250px;
+        height: 170px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    @include hd {
+        max-width: 100vw;
+    }
+}
+
+.popup__graphic {
+    width: 37%;
+    height: 45%;
+    background-color: $color-main-blue;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        top: 150px;
+    }
+}
